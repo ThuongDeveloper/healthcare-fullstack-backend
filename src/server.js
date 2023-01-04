@@ -7,11 +7,12 @@ const cors = require("cors");
 require("dotenv").config();
 
 let app = express();
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
+// app.use(
+//   cors({
+//     origin: "http://localhost:3000",
+//   })
+// );
+app.use(cors());
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended: true}))
